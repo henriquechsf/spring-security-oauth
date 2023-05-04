@@ -20,4 +20,9 @@ class HttpController {
 	String publicRoute() {
 		return "<h1>Public route</h1>";
 	}
+
+	@GetMapping("/private")
+	String privateRoute() {
+		return "<h1>Private route, only authorized user</h1>";
+	}
 }
